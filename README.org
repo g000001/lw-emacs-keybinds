@@ -1,0 +1,14 @@
+* GNU Emacs keybinds for LispWorks Editor
+
+- C-0 ~ 9
+- C-m
+- C-/
+- C-x 2
+- C-x 3
+- C-x 5 0
+- C-x 5 2
+- C-M-Space
+- M-g g
+- M-g c
+
+
