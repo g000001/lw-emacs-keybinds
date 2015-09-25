@@ -24,6 +24,8 @@
 
 (bind-key "Mark Form" "Control-Meta-Space" :global :emacs)
 
+(bind-key "Query Replace Regexp" "Control-Meta-%" :global :emacs)
+
 (defun define-key (map keybind cmd)
   (editor::set-table-entry map keybind cmd))
 
