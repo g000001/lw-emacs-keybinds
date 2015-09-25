@@ -3,6 +3,7 @@
 (cl:in-package :lw-emacs-keybinds)
 
 (progn
+  (bind-key "Negative Argument" "Control--" :global :emacs)
   (bind-key "Argument Digit" "Control-0" :global :emacs)
   (bind-key "Argument Digit" "Control-1" :global :emacs)
   (bind-key "Argument Digit" "Control-2" :global :emacs)
