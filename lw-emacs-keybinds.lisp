@@ -2,6 +2,7 @@
 
 (cl:in-package :lw-emacs-keybinds)
 
+
 (progn
   (bind-key "Negative Argument" "Control--" :global :emacs)
   (bind-key "Argument Digit" "Control-0" :global :emacs)
@@ -18,23 +19,32 @@
 
 (bind-key "New Line" "Control-m" :global :emacs)
 
+
 (bind-key "Undo" "Control-/" :global :emacs)
 
+
 (bind-key "Split Window Vertically" #("Control-x"#\2) :global :emacs)
+
+
 (bind-key "Split Window Horizontally" #("Control-x"#\3) :global :emacs)
+
 
 (bind-key "Mark Form" "Control-Meta-Space" :global :emacs)
 
+
 (bind-key "Query Replace Regexp" "Control-Meta-%" :global :emacs)
+
 
 (defun define-key (map keybind cmd)
   (editor::set-table-entry map keybind cmd))
+
 
 ;;;;;;;;;;;;;;;;;;;;;;
 ;;; *ctrl-x-5-map* ;;;
 ;;;;;;;;;;;;;;;;;;;;;;
 
 (defvar *ctrl-x-5-map* (editor::make-key-table))
+
 
 (progn
   (define-key (editor::get-table-entry (editor::get-right-table :global :emacs)
@@ -52,6 +62,7 @@
               (editor::crunch-key "2")
               (editor::find-command "New Window")))
 
+
 ;;; c-X 7           Unsplit Window
 
 
@@ -66,13 +77,16 @@
             (editor::crunch-key "Meta-g")
             *goto-map*)
 
+
 (define-key *goto-map*  
             (editor::crunch-key "c")
             (editor::find-command "Goto Point"))
 
+
 (define-key *goto-map*  
             (editor::crunch-key "g")
             (editor::find-command "Goto Line"))
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
